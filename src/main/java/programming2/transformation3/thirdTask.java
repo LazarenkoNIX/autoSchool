@@ -4,16 +4,14 @@ import java.util.Scanner;
 
 public class thirdTask {
     public static void main(String[] args) {
-        double n;
-        Scanner input = new Scanner(System.in);
-        n = getA(input);
-        System.out.println("Сумма цифр двузначного числа: " + Math.round(n));
+        round();
     }
 
-    private static double getA(Scanner input) {
-        double a;
+    private static void round() {
+        double n;
+        Scanner input = new Scanner(System.in);
         System.out.println("Введите вещественное число: ");
-        a = input.nextDouble();
-        return a;
+        n = input.nextDouble();
+        System.out.println("Округлённое число: " + Math.round(n));
     }
 }

@@ -9,20 +9,18 @@ public class fourthTask {
         a = getA(input);
         b = getA(input);
         c = getA(input);
-        int A = a, B = b, C = c;
-        a = changeA(A, B);
-        b = changeB(A, C);
-        c = changeC(A, B, C);
+        int tempA = a, tempB = b, tempC = c;
+        a = changeA(tempA, tempB);
+        b = changeB(tempA, tempC);
+        c = changeC(tempA, tempB, tempC);
         System.out.println("Новое значение a: " + a);
         System.out.println("Новое значение b: " + b);
         System.out.println("Новое значение c: " + c);
     }
 
     private static int getA(Scanner input) {
-        int a;
         System.out.println("Введите целое число: ");
-        a = input.nextInt();
-        return a;
+        return input.nextInt();
     }
 
     private static int changeA(int a, int b) {
