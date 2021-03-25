@@ -2,7 +2,7 @@ package programming2.primitivetype4;
 
 import java.util.Scanner;
 
-public class firstTask {
+public class FirstTask {
     public static void main(String[] args) {
         printHelloName();
 //        String a = "Hello, ";

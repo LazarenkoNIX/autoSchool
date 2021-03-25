@@ -2,7 +2,7 @@ package programming2.transformation3;
 
 import java.util.Scanner;
 
-public class secondTask {
+public class SecondTask {
     public static void main(String[] args) {
         int n;
 //        int sum;

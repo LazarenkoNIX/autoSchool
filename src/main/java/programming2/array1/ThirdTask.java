@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 
-public class thirdTask {
+public class ThirdTask {
     public static void main(String[] args) throws IOException {
         initializeStringArray();
     }
@@ -21,8 +21,8 @@ public class thirdTask {
             listInt[i] = listStr[i].length();
         }
         for (int i = 0; i < listInt.length; i++) {
-            System.out.print(listInt[i]);
-            System.out.printf(" %s%n", i);
+            System.out.println(listInt[i]);
+//            System.out.printf(" %s%n", i);
         }
     }
 }

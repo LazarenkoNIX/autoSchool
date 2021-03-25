@@ -2,7 +2,7 @@ package programming2.transformation3;
 
 import java.util.Scanner;
 
-public class fourthTask {
+public class FourthTask {
     public static void main(String[] args) {
         int a, b, c;
         Scanner input = new Scanner(System.in);

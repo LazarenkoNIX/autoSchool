@@ -1,14 +1,14 @@
 package programming2.primitivetype4;
 
-import programming2.com.welcome.hello;
+import programming2.com.welcome.Hello;
 
 import java.util.Scanner;
 
-public class firstTask2 {
+public class FirstTask2 {
     public static void main(String[] args) {
         System.out.println("Введите своё имя: ");
         Scanner input = new Scanner(System.in);
-        hello hello = new hello(input.nextLine());
+        Hello hello = new Hello(input.nextLine());
         hello.welcome();
         System.out.println("Hello world!");
         hello.byeBay();

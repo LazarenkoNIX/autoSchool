@@ -2,7 +2,7 @@ package programming2.array1;
 
 import java.util.Scanner;
 
-public class firstTask {
+public class FirstTask {
     public static void main(String[] args) {
         initializeArray();
     }

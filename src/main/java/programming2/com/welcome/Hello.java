@@ -1,6 +1,6 @@
 package programming2.com.welcome;
 
-public class hello {
+public class Hello {
 
     private String name;
 
@@ -8,16 +8,15 @@ public class hello {
 //        return name;
 //    }
 
-    public hello(String name) {
+    public Hello(String name) {
         this.name = name;
     }
 
     public void welcome() {
-        System.out.println("Hello" + String.format(" %s!", name));
+        System.out.printf("Hello %s!%n", name);
     }
 
     public void byeBay() {
-        System.out.println("Bye" + String.format(" %s!", name));
-
+        System.out.printf("Bye %s!%n", name);
     }
 }
