@@ -22,7 +22,7 @@ public class thirdTask {
         }
         for (int i = 0; i < listInt.length; i++) {
             System.out.print(listInt[i]);
-            System.out.println(String.format(" %s", i));
+            System.out.printf(" %s%n", i);
         }
     }
 }
