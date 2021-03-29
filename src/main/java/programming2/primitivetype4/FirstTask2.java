@@ -6,9 +6,11 @@ import java.util.Scanner;
 
 public class FirstTask2 {
     public static void main(String[] args) {
-        System.out.println("Введите своё имя: ");
+        System.out.println("Input your name: ");
         Scanner input = new Scanner(System.in);
-        Hello hello = new Hello(input.nextLine());
+//        String hello = input.nextLine();
+        Hello hello = new Hello();
+        hello.setupName(input.nextLine());
         hello.welcome();
         System.out.println("Hello world!");
         hello.byeBay();

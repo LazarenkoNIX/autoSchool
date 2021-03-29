@@ -9,7 +9,7 @@ public class ThirdTask {
 
     public static void initializeString() {
         Scanner input = new Scanner(System.in);
-        System.out.println("Введите строку с пробелами: ");
+        System.out.println("Input line with spaces: ");
         String str = input.nextLine();
         System.out.println(maxLength(str));
     }
@@ -18,9 +18,10 @@ public class ThirdTask {
         String[] words = str.split(" ");
         String temp = "";
         for (String word : words) {
-            if (word.length() == temp.length())
-                temp = "";
-            else if (word.length() > temp.length())
+//            if (word.length() == temp.length())
+//                temp = "";
+//            else
+                if (word.length() > temp.length())
                 temp = word;
         }
         return (temp);

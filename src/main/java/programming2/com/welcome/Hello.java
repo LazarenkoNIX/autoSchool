@@ -8,7 +8,10 @@ public class Hello {
 //        return name;
 //    }
 
-    public Hello(String name) {
+//    public Hello(String name) {
+//        this.name = name;
+//    }
+    public void setupName(String name){
         this.name = name;
     }
 
