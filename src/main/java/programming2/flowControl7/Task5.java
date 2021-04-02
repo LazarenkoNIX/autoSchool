@@ -8,7 +8,8 @@ public class Task5 {
         System.out.println("Input name ");
         input.nextLine();
         System.out.println("Input age");
-        if (input.nextInt() < 18) {
+        int a = input.nextInt();
+        if (a < 18 && a > 0) {
             System.out.println("Grow up more");
         }
     }

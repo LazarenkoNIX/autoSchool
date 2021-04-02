@@ -10,10 +10,12 @@ public class Task10 {
         System.out.print("Input number of iteration: ");
         int i = 0;
         int num = input.nextInt();
-        do {
-            i++;
-            System.out.println(line);
+        if (num > 0) {
+            do {
+                i++;
+                System.out.println(line);
+            }
+            while (i < num);
         }
-        while (i < num);
     }
 }
