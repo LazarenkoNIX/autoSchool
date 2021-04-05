@@ -1,4 +1,4 @@
-package objects3.exception4.exception2;
+package exception4.exception2;
 
 import java.util.Scanner;
 
