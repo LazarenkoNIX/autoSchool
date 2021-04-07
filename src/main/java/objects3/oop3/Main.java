@@ -22,7 +22,7 @@ public class Main {
         sortBubble(shape);
 
         for (Shape figure : shape) {
-            System.out.printf("%s, S = %s%n ", figure.getName(), figure.getArea());
+            System.out.printf("%s, S = %s%n", figure.getName(), figure.getArea());
 //            System.out.println(figure.getName() + ", S = " + figure.getArea());
         }
     }
