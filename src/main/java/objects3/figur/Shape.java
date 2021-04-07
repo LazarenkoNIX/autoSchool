@@ -1,14 +1,15 @@
 package objects3.figur;
 
 public abstract class Shape {
+    protected String shapeName;
 
-    public Shape() {
+    public Shape(String shapeName) {
+        this.shapeName = shapeName;
     }
 
     public abstract double getArea();
 
-    public abstract String name();
-
-//    public abstract void drow();
-
+    public String getName() {
+        return shapeName;
+    }
 }

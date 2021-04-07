@@ -8,25 +8,26 @@ import objects3.figur.Shape;
 public class Main {
     public static void main(String[] args) {
         Shape[] shape = new Shape[10];
-        shape[0] = new Circle(12, 1, 22.1);
-        shape[1] = new Square(3, 5, 1, 7, 15.8);
-        shape[2] = new Triangle(2, 3, 1, 21, 15.7);
-        shape[3] = new Circle(12, 1, 56.5);
-        shape[4] = new Square(3, 5, 1, 7, 12.58);
-        shape[5] = new Triangle(2, 3, 1, 21, 25.5);
-        shape[6] = new Circle(12, 1, 22.7);
-        shape[7] = new Square(3, 5, 1, 7, 12.8);
-        shape[8] = new Triangle(2, 3, 1, 21, 25.9);
-        shape[9] = new Circle(12, 1, 22);
+        shape[0] = new Circle(22.1);
+        shape[1] = new Square(15.8);
+        shape[2] = new Triangle(21, 15.7);
+        shape[3] = new Circle(56.5);
+        shape[4] = new Square(12.58);
+        shape[5] = new Triangle(21, 25.5);
+        shape[6] = new Circle(22.7);
+        shape[7] = new Square(12.8);
+        shape[8] = new Triangle(21, 25.9);
+        shape[9] = new Circle(22);
 
-        bubbleSort(shape);
+        sortBubble(shape);
 
         for (Shape figure : shape) {
-            System.out.println(figure.name() + ", S = " + figure.getArea());
+            System.out.printf("%s, S = %s%n ", figure.getName(), figure.getArea());
+//            System.out.println(figure.getName() + ", S = " + figure.getArea());
         }
     }
 
-    public static void bubbleSort(Shape[] shape) {
+    public static void sortBubble(Shape[] shape) {
         boolean sorted = false;
         Shape temp;
         while (!sorted) {
