@@ -16,51 +16,47 @@ public class Task15 {
         int monthApproved = 0;
         int dayApproved = 0;
         BufferedReader R = new BufferedReader(new InputStreamReader(System.in));
-        for (int i = 0; i < 5; i++) {
-            System.out.printf("Input %s person surname %n", (i + 1));
+        for (int i = 0; i < 10; i++) {
+            System.out.printf("Input %s person surname:%n", (i + 1));
             String surname = R.readLine();
-            System.out.printf("Input %s birthday year%n", (i + 1));
-            int year = scanner.nextInt();
-            boolean a, b, c;
-            while (true){
+            while (true) {
+                System.out.printf("Input %s birthday year:%n", (i + 1));
+                int year = scanner.nextInt();
                 if (year >= 1900 && year <= 2021) {
                     yearApproved = year;
-                } else {
-                    System.out.println("Incorrect year");
                     break;
+                } else {
+                    System.out.println("Incorrect year!");
                 }
             }
-            System.out.printf("Input %s birthday month%n", (i + 1));
-            int month = scanner.nextInt();
             while (true) {
+                System.out.printf("Input %s birthday month:%n", (i + 1));
+                int month = scanner.nextInt();
                 if (month >= 1 && month <= 12) {
                     monthApproved = month;
                     break;
                 } else {
-                    System.out.println("Incorrect month");
+                    System.out.println("Incorrect month!");
                 }
             }
-            System.out.printf("Input %s birthday day%n", (i + 1));
-            int day = scanner.nextInt();
             while (true) {
+                System.out.printf("Input %s birthday day:%n", (i + 1));
+                int day = scanner.nextInt();
                 if (day >= 1 && day <= 31) {
                     dayApproved = day;
                     break;
                 } else {
-                    System.out.println("Incorrect day");
+                    System.out.println("Incorrect day!");
                 }
             }
             map.put(surname, LocalDate.of(yearApproved, monthApproved, dayApproved));
         }
         for (Map.Entry<String, LocalDate> pair : map.entrySet()) {
-//            String key = pair.getKey();
-//            LocalDate value = pair.getValue();
             int month = pair.getValue().getMonthValue();
             System.out.println(month);
             if (month >= 6 && month <= 8) {
                 tobeDeleted.add(pair.getKey());
             }
-//            System.out.printf("%s - %s%n", key, value);
         }
         for (String str : tobeDeleted) {
             map.remove(str);
