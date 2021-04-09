@@ -3,7 +3,7 @@ package genericscollectionsstreams5.collestions1;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Taks17 {
+public class Task17 {
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<>();
 

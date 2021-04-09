@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Taks8 {
+public class Task8 {
     public static void main(String[] args) throws IOException {
         List<String> list = new ArrayList<>();
 
