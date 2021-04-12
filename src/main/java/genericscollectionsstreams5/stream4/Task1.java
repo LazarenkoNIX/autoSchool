@@ -15,10 +15,11 @@ public class Task1 {
             list.add("Dinamo");
             list.add("Alladin");
             list.add("Plane");
+            list.add("Village");
         }
-        BufferedReader R = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader readLine = new BufferedReader(new InputStreamReader(System.in));
         System.out.printf("Press Enter to input 10 empty elements: %n");
-        String str = R.readLine();
+        String str = readLine.readLine();
         for (int i = 0; i < 10; i++) {
             list.add(str);
         }

@@ -10,15 +10,15 @@ public class Task11 {
     public static void main(String[] args) throws IOException {
         List<String> list = new ArrayList<>();
 
-        BufferedReader R = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader readLine = new BufferedReader(new InputStreamReader(System.in));
 
         for (int i = 0; i < 5; i++) {
             System.out.printf("Input %s line%n", (i + 1));
-            list.add(R.readLine());
+            list.add(readLine.readLine());
         }
-        for (int i = 0; i < 13; i++) {
-            list.add(0, list.get(4));
-            list.remove(5);
+        for (int i = 0; i < 2; i++) {
+            list.add(0, list.get(list.size() - 1));
+            list.remove(list.size() - 1);
         }
         for (String text : list) {
             System.out.println(text);

@@ -10,11 +10,11 @@ public class Task10 {
     public static void main(String[] args) throws IOException {
         List<String> list = new ArrayList<>(10);
 
-        BufferedReader R = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader readLine = new BufferedReader(new InputStreamReader(System.in));
 
         for (int i = 0; i < 10; i++) {
             System.out.printf("Input %s line%n", (i + 1));
-            list.add(0, (R.readLine()));
+            list.add(0, (readLine.readLine()));
         }
 
         for (String text : list) {
