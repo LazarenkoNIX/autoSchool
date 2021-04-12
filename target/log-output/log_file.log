@@ -1,7 +1,6 @@
-2021-04-08 02:42:53 INFO Main 10 - This is information massage
-2021-04-08 02:42:53 WARN Main 11 - This is a warning message
-2021-04-08 02:42:53 ERROR Main 12 - This is an error message
-2021-04-08 02:42:53 FATAL Main 13 - This is fatal message
-2021-04-08 02:43:34 WARN Main 11 - This is a warning message
-2021-04-08 02:43:34 ERROR Main 12 - This is an error message
-2021-04-08 02:43:34 FATAL Main 13 - This is fatal message
+2021-04-12 11:22:13 WARN Main 11 - This is a warning message
+2021-04-12 11:22:13 ERROR Main 12 - This is an error message
+2021-04-12 11:22:13 FATAL Main 13 - This is fatal message
+2021-04-12 11:22:13 WARN Main 21 - This is a warning message
+2021-04-12 11:22:13 ERROR Main 22 - This is an error message
+2021-04-12 11:22:13 FATAL Main 23 - This is fatal message
